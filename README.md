@@ -1,5 +1,5 @@
 # Ex. No: 5 Inter-VLAN Routing Using Router-on-a-Stick
-# Date:
+# Date:18-11-2026
 ________________________________________
 # Objective
 To configure Inter-VLAN routing using a single router interface with subinterfaces (Router-on-a-Stick) so that hosts in different VLANs can communicate with each other.
@@ -12,6 +12,8 @@ ________________________________________
 •	Straight-through Ethernet cables<br>
 ________________________________________
 # Network Topology Diagram
+<img width="1817" height="1078" alt="image" src="https://github.com/user-attachments/assets/bcf28d75-6dad-456b-8717-06d17544080d" />
+
 # Description:
 •	PC0 and PC1 belong to VLAN 10 (192.168.10.0/24)<br>
 •	PC2 and PC3 belong to VLAN 20 (192.168.20.0/24)<br>
@@ -87,10 +89,23 @@ Router(config-if)# no shutdown<br>
 ________________________________________
 # Output (Screenshots)
 •	VLAN configuration on the switch<br>
+<img width="1917" height="1078" alt="Screenshot 2026-11-18 180806" src="https://github.com/user-attachments/assets/35c61a10-d5a2-4966-95f8-71ed73825515" />
+
+
 •	Router subinterface configuration<br>
+<img width="1917" height="1078" alt="Screenshot 2026-11-18 180741" src="https://github.com/user-attachments/assets/703714e8-6767-4b5a-a6e1-e3923f53d2b3" />
+
+
 •	PC IP settings<br>
+<img width="1916" height="1077" alt="Screenshot 2026-11-18 180835" src="https://github.com/user-attachments/assets/6ea2e36e-5d4c-4653-9e36-6edd8f73bd2a" />
+
+
 •	Successful ping between PCs in different VLANs after routing<br>
+<img width="1917" height="1075" alt="Screenshot 2026-11-18 180910" src="https://github.com/user-attachments/assets/14974e08-51a8-47ad-90d3-e9724a7fe54f" />
+
 •	Successful ping between PCs in the same VLAN<br>
+<img width="1917" height="1075" alt="Screenshot 2026-11-18 180910" src="https://github.com/user-attachments/assets/cb247cc5-4f13-4499-9e0c-abe8f967a9a6" />
+
 ________________________________________
 # Result
 Inter-VLAN routing was successfully configured using the Router-on-a-Stick method. PCs in different VLANs could communicate through the router.
